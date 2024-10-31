@@ -1,6 +1,11 @@
 import requests 
 from bs4 import BeautifulSoup 
 import pandas as pd
+import warnings
+from urllib3.exceptions import InsecureRequestWarning
+
+# Suppress only the InsecureRequestWarning
+warnings.simplefilter('ignore', InsecureRequestWarning)
 
 cuurent_page = 1
 
